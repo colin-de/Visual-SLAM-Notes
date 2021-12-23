@@ -5,13 +5,13 @@ This is SLAM course is offered by shenlanxueyuan.com
 
 Runing my video with **ORB-SLAM2[https://github.com/weihang-li/ORB_SLAM2/tree/master/Examples/myvideo]**
 
-![image-20211223131815355](/home/lwh/.config/Typora/typora-user-images/image-20211223131815355.png)
+![myvideo](/home/lwh/Visual-SLAM-Notes/1.Intro/myvideo.png)
 
 # 2. Eigen & Geometry Visualization
 
-![image-20211223133316891](/home/lwh/.config/Typora/typora-user-images/image-20211223133316891.png)
+![visualization](/home/lwh/Visual-SLAM-Notes/2.Rigid_Body_Motion/visualization.png)
 
 # 3. Trajectory Estimation
 
-![image-20211223151405508](/home/lwh/.config/Typora/typora-user-images/image-20211223151405508.png)
+![trajectory](/home/lwh/Visual-SLAM-Notes/3.Lie_Group/trajectory.png)
 
