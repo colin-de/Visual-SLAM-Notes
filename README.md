@@ -1,9 +1,9 @@
 # Visual-SLAM-Notes
-This is SLAM course is offered by shenlanxueyuan.com 
+This is collection of basis of Visual SLAM, which is aligned the book from Xiang Gao https://github.com/gaoxiang12/slambook-en
 
-# 1.Intro
+# 1. Intro
 
-Runing my video with **ORB-SLAM2[https://github.com/weihang-li/ORB_SLAM2/tree/master/Examples/myvideo]**
+Running my video with **ORB-SLAM 2[https://github.com/weihang-li/ORB_SLAM2/tree/master/Examples/myvideo]**
 
 ![myvideo](./1.Intro/myvideo.png)
 
