@@ -15,3 +15,9 @@ Runing my video with **ORB-SLAM2[https://github.com/weihang-li/ORB_SLAM2/tree/ma
 
 ![trajectory](./3.Lie_Group/trajectory.png)
 
+# 4. Camera Model & Nonlinear Optimization
+
+![trajectory](./4.CameraModel_NonlinearOptimization/img/pointcloud.png)
+
+![trajectory](./4.CameraModel_NonlinearOptimization/img/image_undistorted.png)
+
