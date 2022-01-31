@@ -8,10 +8,6 @@ using namespace std;
 
 #define MATRIX_SIZE 50
 
-/****************************
-* 本程序演示了 Eigen 基本类型的使用
-****************************/
-
 int main(int argc, char **argv)
 {
     // Eigen 中所有向量和矩阵都是Eigen::Matrix，它是一个模板类。它的前三个参数为：数据类型，行，列

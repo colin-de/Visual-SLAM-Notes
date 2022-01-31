@@ -6,10 +6,6 @@ using namespace std;
 // Eigen 几何模块
 #include <Eigen/Geometry>
 
-/****************************
-* 本程序演示了 Eigen 几何模块的使用方法
-****************************/
-
 int main ( int argc, char** argv )
 {
     // Eigen/Geometry 模块提供了各种旋转和平移的表示

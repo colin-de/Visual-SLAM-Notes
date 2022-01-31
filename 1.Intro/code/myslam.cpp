@@ -1,10 +1,3 @@
-//
-// Created by xiang on 11/29/17.
-//
-
-// 该文件将打开你电脑的摄像头，并将图像传递给ORB-SLAM2进行定位
-
-// 需要opencv
 #include <opencv2/opencv.hpp>
 
 // ORB-SLAM的系统接口
@@ -16,8 +9,6 @@
 
 using namespace std;
 
-// 参数文件与字典文件
-// 如果你系统上的路径不同，请修改它
 string parameterFile = "./myslam.yaml";
 string vocFile = "./Vocabulary/ORBvoc.txt";
 

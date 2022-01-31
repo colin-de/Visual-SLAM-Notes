@@ -1,7 +1,3 @@
-//
-// Created by 高翔 on 2017/12/15.
-//
-
 #include <opencv2/opencv.hpp>
 #include <string>
 #include <Eigen/Core>

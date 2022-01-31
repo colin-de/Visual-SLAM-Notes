@@ -1,12 +1,5 @@
-//
-// Created by 高翔 on 2017/12/19.
-// 本程序演示ORB是如何提取、计算和匹配的
-//
-
 #include <opencv2/opencv.hpp>
-
 #include <string>
-
 using namespace std;
 
 // global variables
@@ -24,7 +17,6 @@ const double pi = 3.1415926;    // pi
  */
 void computeAngle(const cv::Mat &image, vector<cv::KeyPoint> &keypoints);
 
-// TODO implement this function
 /**
  * compute ORB descriptor
  * @param [in] image the input image
@@ -103,14 +95,18 @@ int main(int argc, char **argv) {
 }
 
 // -------------------------------------------------------------------------------------------------- //
-
 // compute the angle
 void computeAngle(const cv::Mat &image, vector<cv::KeyPoint> &keypoints) {
     int half_patch_size = 8;
     for (auto &kp : keypoints) {
-	// START YOUR CODE HERE (~7 lines)
         kp.angle = 0; // compute kp.angle 
-        // END YOUR CODE HERE
+        int x = cvRound(kp.pt.x);
+        int y = cvRound(kp.pt.y);
+        if (x - half_patch_size < 0 || x + half_patch_size > image.cols ||
+            y - half_patch_size < 0 || y + half_patch_size > image.rows){
+            bad_points++;
+            continue;
+        }
     }
     return;
 }
@@ -381,9 +377,7 @@ void computeORBDesc(const cv::Mat &image, vector<cv::KeyPoint> &keypoints, vecto
     for (auto &kp: keypoints) {
         DescType d(256, false);
         for (int i = 0; i < 256; i++) {
-            // START YOUR CODE HERE (~7 lines)
             d[i] = 0;  // if kp goes outside, set d.clear()
-	    // END YOUR CODE HERE
         }
         desc.push_back(d);
     }
@@ -399,11 +393,7 @@ void computeORBDesc(const cv::Mat &image, vector<cv::KeyPoint> &keypoints, vecto
 // brute-force matching
 void bfMatch(const vector<DescType> &desc1, const vector<DescType> &desc2, vector<cv::DMatch> &matches) {
     int d_max = 50;
-
-    // START YOUR CODE HERE (~12 lines)
     // find matches between desc1 and desc2. 
-    // END YOUR CODE HERE
-
     for (auto &m: matches) {
         cout << m.queryIdx << ", " << m.trainIdx << ", " << m.distance << endl;
     }
