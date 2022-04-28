@@ -12,4 +12,4 @@ find_package(Pangolin REQUIRED)
 include_directories(${Pangolin_INCLUDE_DIRS})
 
 add_executable(draw_trajectory draw_trajectory.cpp)
-target_link_libraries(draw_trajectory Sophus::Sophus ${Pangolin_LIBRARIES} fmt::fmt)
+target_link_libraries(draw_trajectory Sophus::Sophus ${Pangolin_LIBRARIES} ${FMT_LIBRARIES})
